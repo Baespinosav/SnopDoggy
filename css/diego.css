@@ -1,0 +1,19 @@
+.perfil{
+    width: 350px;
+    height: 350px;
+    color: yellowgreen;
+    margin-left: 50px;
+    font-size: 18px;
+    
+    
+}
+
+.aside{
+    
+    opacity: 100%;
+}
+
+.footer{
+    background-color: red;
+
+}
