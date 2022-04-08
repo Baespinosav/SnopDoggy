@@ -17,3 +17,62 @@
     background-color: red;
 
 }
+
+.container{
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    color: white;
+    margin-top: 40px;
+}
+
+.container h1{
+    color: white
+    
+}
+
+.left_label {
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.radio_sexo {
+    margin-right: 10px;
+}
+
+#rut {
+    width: 180px;
+}
+
+#nombres, #apellidos, #correo {
+    width: 450px;
+}
+
+#edad {
+    width: 60px;
+}
+
+.fondo{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000000;
+    background: rgba(0,0,0,0.4) url("../img/offer.jpg");
+    background-size: 200% 200%;
+    animation: gradient 120s ease infinite;
+    background-blend-mode: darken;
+    height: 98vh;
+    
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
