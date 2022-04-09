@@ -1,9 +1,10 @@
 .perfil{
-    width: 350px;
+    width: 600px;
     height: 350px;
     color: yellowgreen;
     margin-left: 50px;
     font-size: 18px;
+    background-color: whitesmoke;
     
     
 }
@@ -75,4 +76,15 @@
     100% {
       background-position: 0% 50%;
     }
+}
+
+.imagen-compra{
+    width: 100px;
+    height: 100px;
+    border-left-width: thin;
+    border-right-width: thin;
+    border-top-width: thin;
+    border-bottom-width: thin;
+    border-color: #6730b7;
+
 }
