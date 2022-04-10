@@ -66,6 +66,10 @@
     margin-left: 50px;
 }
 
+.marco{
+    margin-left: 0px;
+}
+
 
 .aside{
     
@@ -90,7 +94,7 @@
 }
 
 .left_label {
-    width: 150px;
+    width: 450px;
     display: inline-block;
     vertical-align: top;
 }
@@ -111,6 +115,7 @@
     width: 60px;
 }
 
+
 .fondo{
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -120,7 +125,7 @@
     background-size: 200% 200%;
     animation: gradient 120s ease infinite;
     background-blend-mode: darken;
-    height: 98vh;
+    height: 100vh;
     
   }
 
@@ -146,3 +151,4 @@
     border-color: #6730b7;
 
 }
+
