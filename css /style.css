@@ -458,12 +458,3 @@
 .blog-item a:hover i::after {
     width: 50px;
 }
-
-.bg-offer{
-    margin: 0 auto;
-    max-width: 40%;
-    min-width: 447.3px;
-    height: auto;
-    background-repeat: no-repeat;
-
-}
