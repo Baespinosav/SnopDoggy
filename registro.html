@@ -30,7 +30,7 @@
     <link href="css/diego.css" rel="stylesheet">
 </head>
 
-<body style="background-color: #601869">
+<body>
         <div class="fondo">
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
@@ -82,24 +82,38 @@
                 <label class="left_label" for="apellidos">Apellidos</label>
                 <input type="text" class="marco" name="apellidos" id="apellidos" placeholder="Escribe aquí tus apellidos">
                 <br>
+                
                 <label class="left_label" for="edad">Edad</label>
-                <input type="number" class="marco" name="edad" id="edad">
+                <div class="espacio">
+                <input type="number" class="marco"  name="edad" id="edad">
+                </div>
                 <br>
+                
                 <label class="left_label" for="correo">Correo</label>
+                <div class="espacio">
                 <input type="email" class="marco" name="correo" id="correo" placeholder="Escribe aquí tu correo">
+                </div>
                 <br>
+                
                 <label class="left_label" for="contrasena1">Ingresa una contraseña</label>
+                <div class="espacio">
                 <input type="password" class="marco" name="contrasena1" id="contrasena1" >
+                </div>
                 <br>
                 <label class="left_label" for="contrasena2">Repite tu contraseña</label>
+                <div class="espacio">
                 <input type="password" class="marco" name="contrasena2" id="contrasena2">
+                </div>
                 <br>
                 <label class="left_label" for="telefono">Telefono</label>
+                <div class="espacio">
                 <input type="number" class="marco" name="telefono" id="telefono">
+                </div>
                 <br>
                 
                 <br>
                 <label class="left_label" for="pais">País</label>
+                <div class="espacio">
                 <select name="pais" id="pais">
                     <optgroup label="Latinoamérica">
                         <option value="1">Chile</option>
@@ -114,6 +128,7 @@
                         <option value="10">Colombia</option>
                     </optgroup>
                 </select>
+                </div>
                 <br>
                 <label class="left_label" class="marco" for="direccion">Dirección</label>
                 <textarea name="direccion" id="direccion" cols="60" rows="5" style="max-width: 90%;" placeholder="Escribe aquí tu dirección"></textarea>
