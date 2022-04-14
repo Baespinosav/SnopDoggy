@@ -110,33 +110,71 @@
 }
 
 #rut {
-    width: 180px;
+    width: 450px;
 }
+
+
 
 #nombres, #apellidos, #correo {
     width: 450px;
     max-width: 95%;
-    margin-right: 30px;
-
 }
 
 #edad {
     width: 100px;
 }
-
-
-.fondo{
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #000000;
-    background: rgba(0,0,0,0.4) url("../img/offer1.jpg");
-    background-size: 180% 180%;
-    animation: gradient 120s ease infinite;
-    background-blend-mode: darken;
-    height: 133vh;
+.espacio{
+    width: 450px;
     
-  }
+    margin:0;
+    display: inline-block;
+}
+
+
+@media only screen and (min-width: 300px) {
+    .fondo{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: #000000;
+        background: rgba(0,0,0,0.4) url("../img/offer1.jpg");
+        background-size: 200% 200%;
+        animation: gradient 120s ease infinite;
+        background-blend-mode: darken;
+        height: 100%;
+        
+      }
+}
+@media only screen and (min-width: 780px) {
+    .fondo{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: #000000;
+        background: rgba(0,0,0,0.4) url("../img/offer1.jpg");
+    
+        background-size: 180% 180%;
+        animation: gradient 120s ease infinite;
+        background-blend-mode: darken;
+        height: 100%;
+        
+      }
+}
+@media only screen and (min-width: 900px) {
+    .fondo{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: #000000;
+        background: rgba(0,0,0,0.4) url("../img/offer1.jpg");
+    
+        background-size: 180% 180%;
+        animation: gradient 120s ease infinite;
+        background-blend-mode: darken;
+        height: 100%;
+        
+      } 
+}
 
   @keyframes gradient {
     0% {
