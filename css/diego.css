@@ -1,5 +1,5 @@
 .perfil{
-    width: 800px;
+    width: 780px;
     height: 250px;
     color: rgb(64, 4, 88);
     background-color: whitesmoke;
@@ -22,7 +22,7 @@
 }
 
 .perfil:hover{
-    width: 830px;
+    width: 800px;
     height: 260px;
     transition: 1.35s;
 }
