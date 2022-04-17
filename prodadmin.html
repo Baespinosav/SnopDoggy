@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <title>SnopDoggy</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+        <!-- Favicon -->
+        <link href="img/favicon.jpg.png" rel="icon">
+    
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+    
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Topbar Start -->
+        
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand ms-lg-5">
+            <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i>Tienda Doggy</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <!-- <a href="index.html" class="nav-item nav-link">Inicio</a>
+                <a href="about.html" class="nav-item nav-link">Nosotros</a> -->
+                <!-- <a href="service.html" class="nav-item nav-link">Servicio</a> -->
+                <a href="product.html" class="nav-item nav-link active">Productos</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tipo de usuario.</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="index.html" class="dropdown-item">Usuario registrado.</a>
+                        <a href="index.html" class="dropdown-item">Usuario NO registrado.</a>
+                        <a href="prodadmin.html" class="dropdown-item">Pagina de administrador.</a>
+                    </div>
+                </div>
+                <!-- <a href="contact.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">Contacto <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Products Start -->
+    <!-- <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-primary text-uppercase">Productos</h6>
+                <h1 class="display-5 text-uppercase mb-0">Productos para tus mejores amigos</h1>
+            </div>
+            <div class="owl-carousel product-carousel">
+                <div class="pb-5">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/product-1.png" alt="">
+                        <h6 class="text-uppercase">Bandana <br> perro.</h6>
+                        <h5 class="text-primary mb-0">3.990$ CLP.</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/product-2.png" alt="">
+                        <h6 class="text-uppercase">Bandana <br> gato.</h6>
+                        <h5 class="text-primary mb-0">3.990$ CLP.</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/product-3.png" alt="">
+                        <h6 class="text-uppercase">Correas para <br> mascotas.</h6>
+                        <h5 class="text-primary mb-0">2990$ CLP.</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/product-4.png" alt="">
+                        <h6 class="text-uppercase">Identificadores de mascotas.</h6>
+                        <h5 class="text-primary mb-0">1500$ CLP.</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Products End -->
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 6000px;">
+                <h6 class="text-primary text-uppercase">Productos en stock</h6>
+                <h1 class="display-5 text-uppercase mb-0">Estos son los productos que tenemos en stock</h1>
+                <div class="container-fluid py-5">
+                    <div class="container">
+                        <div class="owl-carousel team-carousel position-relative" style="padding-right: 25px;">
+                            <div class="team-item">
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/product-1.png" alt="">
+                                    <div class="team-overlay">
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                                <span>Eliminar.</span>
+                                                <i class="bi bi-x fs-4 text-danger"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-light text-center p-4">
+                                    <h5 class="text-uppercase">Bandana para perro.</h5>
+                                    <p class="m-0">Stock inicial: 20</p>
+                                    <p class="m-0">Stock final: 3</p>
+                                </div>
+                            </div>
+                            <div class="team-item">
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/product-2.png" alt="">
+                                    <div class="team-overlay">
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                                <span>Eliminar.</span>
+                                                <i class="bi bi-x fs-4 text-danger"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-light text-center p-4">
+                                    <h5 class="text-uppercase">Bandana para gato.</h5>
+                                    <p class="m-0"><p class="m-0">Stock inicial: 20</p>
+                                    <p class="m-0">Stock final: 1</p></p>
+                                </div>
+                            </div>
+                            <div class="team-item">
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/product-3.png" alt="">
+                                    <div class="team-overlay">
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                                <span>Eliminar.</span>
+                                                <i class="bi bi-x fs-4 text-danger"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-light text-center p-4">
+                                    <h5 class="text-uppercase">Correa para perro.</h5>
+                                    <p class="m-0">Stock inicial: 20</p>
+                                    <p class="m-0">Stock final: 10</p>
+                                </div>
+                            </div>
+                            <div class="team-item">
+                                <div class="position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/product-4.png" alt="">
+                                    <div class="team-overlay">
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                                <span>Eliminar.</span>
+                                                <i class="bi bi-x fs-4 text-danger"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-light text-center p-4">
+                                    <h5 class="text-uppercase">Identificador de mascota.</h5>
+                                    <p class="m-0">Stock inicial: 20</p>
+                                    <p class="m-0">Stock final: 20</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Stock End -->
+        </div>
+
+        <div style="width:100%; height:100%">
+            <a href="agprod.html" class="btn btn-primary w-50 py-3 text-center">Agregar producto.</a>
+        </div>
+
+        
+
+
+    <!-- Offer Start -->
+    <div class="container-fluid bg-offer my-5 py-5">
+        <div class="container py-5">
+            <div class="row gx-5 justify-content-start">
+                <div class="col-lg-7">
+                    <div class="border-start border-5 border-dark ps-5 mb-5">
+                        <p class="text-dark text-uppercase">Ofertas!</p>
+                        <p class="display-5 text-uppercase text-white mb-0">Obten un 50% de descuento en tu primera compra!</p>
+                    </div>
+                    <p class="text-white mb-4">Por la inaguración de nuestro sitio web, obtendras un 50% de descuento en la primera compra que realices.</p>
+                    <a href="" class="btn btn-light py-md-3 px-md-5 me-3">Comprar</a>
+                    <!-- <a href="" class="btn btn-outline-light py-md-3 px-md-5">Leer más</a> -->
+                    <p class="text-white mb-4">Total de clicks : 27</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Offer End -->
+
+
+    <!-- Pricing Plan Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-primary text-uppercase">Nuestros Planes de suscripción</h6>
+                <h1 class="display-5 text-uppercase mb-0">Niveles de planes</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="bg-light text-center pt-5 mt-lg-5">
+                        <h2 class="text-uppercase">Basico.</h2>
+                        <h6 class="text-body mb-5">La mejor opcion para empezar, en especial si no compras frecuentemente.</h6>
+                        <div class="text-center bg-primary p-4 mb-2">
+                            <h1 class="display-4 text-white mb-0">
+                                <small class="align-top"
+                                    style="font-size: 22px; line-height: 45px;">$</small>5.000 CLP<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                    Mo</small>
+                            </h1>
+                            <p class="text-white mb-1">Contratado: 3</p>
+                            <p class="text-white mb-1">Total clicks: 7</p>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Envio gratis.</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Descuento del 40%.</span>
+                                <i class="bi bi-x fs-4 text-danger"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Envio expres.</span>
+                                <i class="bi bi-x fs-4 text-danger"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Ofertas especiales.</span>
+                                <i class="bi bi-x fs-4 text-danger"></i>
+                            </div>
+                            <a href="" class="btn btn-primary text-uppercase py-2 px-4 my-3">Comprar ya.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light text-center pt-5 mt-lg-5">
+                        <h2 class="text-uppercase">Estandar.</h2>
+                        <h6 class="text-body mb-5">La opción más adecuada si sules comprar en grandes cantidades y frecuentemente. </h6>
+                        <div class="text-center bg-dark p-4 mb-2">
+                            <h1 class="display-4 text-white mb-0">
+                                <small class="align-top"
+                                    style="font-size: 22px; line-height: 45px;">$</small>7.500 CLP<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                    Mo</small>
+                            </h1>
+                            <p class="text-white mb-1">Contratado: 0</p>
+                            <p class="text-white mb-1">Total clicks: 10</p>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Envio gratis.</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Descuento del 40%.</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Envio expres.</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Ofertas especiales.</span>
+                                <i class="bi bi-x fs-4 text-danger"></i>
+                            </div>
+                            <a href="" class="btn btn-primary text-uppercase py-2 px-4 my-3">Comprar ya.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light text-center pt-5 mt-lg-5">
+                        <h2 class="text-uppercase">Premium.</h2>
+                        <h6 class="text-body mb-5">Para los clientes que quieren lo <br> mejor siempre.</h6>
+                        <div class="text-center bg-primary p-4 mb-2">
+                            <h1 class="display-4 text-white mb-0">
+                                <small class="align-top"
+                                    style="font-size: 22px; line-height: 45px;">$</small>10.000 CLP<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                    Mo</small>
+                            </h1>
+                            <p class="text-white mb-1">Contratado: 1</p>
+                            <p class="text-white mb-1">Total clicks: 4</p>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Envio gratis.3</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Descuento del 40%.</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Envio expres.</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                <span>Ofertas especiales.</span>
+                                <i class="bi bi-check2 fs-4 text-primary"></i>
+                            </div>
+                            <a href="" class="btn btn-primary text-uppercase py-2 px-4 my-3">Comprar ya.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing Plan End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                
+                <div class="col-12 text-center text-body">
+                    <a class="text-body" href="">Terminos & Condiciones.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Politicas de privacidad.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Soporte.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Pagos.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Ayuda.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Preguntas frecuentes.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white" href="#">SnopDoggy's.</a> Todo los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Diseñado por: <a class="text-white" href="https://htmlcodex.com">Oe pucón.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
