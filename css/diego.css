@@ -130,6 +130,12 @@
     display: inline-block;
 }
 
+/*CHECK BOX REGISTRO */
+.check{
+    font-size: 20px;
+    margin-left: 60%;
+}
+
 
 @media only screen and (min-width: 300px) {
     .fondo{
