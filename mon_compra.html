@@ -25,6 +25,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/compra.css" rel="stylesheet">
 </head>
 
 <body>
@@ -103,45 +104,57 @@
     <div class="container-fluid pt-5">
         <div class="container">
             <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
-                <h6 class="text-primary text-uppercase">Orden de Compra</h6>
+                <h6 class="text-primary text-uppercase">Revisa información</h6>
                 <h1 class="display-5 text-uppercase mb-0">Datos de compra</h1>
             </div>
             <div class="row g-5">
                 <div class="col-lg-7">
                     <form>
-                        <div class="row g-3">
+                        <div class="row g-5 ">
                             <div class="col-4">
-                                <h4>Nro. orden de pedido:</h4>
-                                <h6 class="form-control bg-light border-0 px-4">#2325</h6>
+                                <h4>Nombre </h4>
+                                <h6 class="form-control bg-light border-0 px-4">Alexis Sepulveda</h6>
                             </div>
-                            <div class="col-7">
-                                <h4>En preparacion:</h4>
-                                <h4>En camino:</h4>
-                                <h4>Entregado:</h4>
-                                <a href="detalle_compra.html">Ver detalles</a>
+                            <div class="col-md-6">
+                                <h4>Dirección </h4>
+                                <h6 class="form-control bg-light border-0 px-4">Mozart 5090, San Joaquin, RM</h6>
                             </div>
-                            <div class="col-7">
-                                <h4>Detalle del producto:</h4>
-                                <h6 class="form-control bg-light border-0 px-4">Bandana de Perro</h6>
+                            <div class="col-md-4">
+                                <h4>Telefono </h4>
+                                <h6 class="form-control bg-light border-0 px-4">+569 78146592</h6>
                             </div>
-                            <div class="col-7">
-                                <h4>Precio:</h4>
-                                <h6 class="form-control bg-light border-0 px-4">$3.990</h6>
+                            <div class="col-md-6">
+                                <h4>Correo </h4>
+                                <h6 class="form-control bg-light border-0 px-4">Alexis.Sepulveda1@gmail.com</h6>
                             </div>
-                            <div class="col-7">
-                                <h4>Cantidad:</h4>
-                                <h6 class="form-control bg-light border-0 px-4">1</h6>
+                            <div>
+                                <h4>Entrega</h4>
+                                <div class="text-left">
+                                    <input id="retiro" type="radio" name="entrega" value="retiro">
+                                        <label for="retiro">Retiro</label>
+                                    <br>
+                                    <input id="domicilio" type="radio" name="entrega" value="domicilio">
+                                        <label for="domicilio">Domicilio</label>
+                                </div>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="col-lg-5">
                     <div class="bg-light mb-4 p-3">
-                        <div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.0778626649244!2d-70.65978848509172!3d-33.44727790473487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c507f91be917%3A0xcfac72a68dd4b986!2sDuoc%20UC%20-%20Sede%20Padre%20Alonso%20de%20Ovalle!5e0!3m2!1ses-419!2scl!4v1649347189161!5m2!1ses-419!2scl" 
-                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="col-7 text-center">
+                            <h4>Productos en el carro:</h4>
+                            <h6 class="form-control bg-light border-0 px-4">Bandana de Perro $3.990</h6>
                         </div>
+                        <h5>Total : $3.990</h5>    
+                    </div>
+                    <div class="text-center">
+                        <a href="">
+                            <button type="button" class="botonc">Pagar</button>
+                        </a>
+                        <a href="product.html">
+                            <button type="button" class="botonc">Continuar compra</button>
+                        </a>
                     </div>
                 </div>
             </div>
