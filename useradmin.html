@@ -99,68 +99,76 @@
     <!-- Navbar End -->
 
 
-    <!-- Contact Start -->
-    <div class="container-fluid pt-5">
+    <form action="registrar.php" method="post" id="formulario-registro">
         <div class="container">
-            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
-                <h6 class="text-primary text-uppercase">Información de usuarios</h6>
-                <h1 class="display-5 text-uppercase mb-0">Estos son los usuarios registrados en la web.</h1>
+        <fieldset style="margin-top: 5px;">
+            <label for="id">ID: </label>
+            <input name="id" id="id" type="text">
+        </fieldset>
+        <fieldset style="margin-top: 5px;">
+            <label for="categoria">Categoria: </label>
+            <select name="categoria" id="categoria">
+                <option value="1">Perros</option>
+                <option value="2">Gatos</option>
+            </select>
+        </fieldset>
+        <fieldset style="margin-top: 5px;">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre del producto">
+        </fieldset>
+        <fieldset style="margin-top: 5px;">
+            <label for="descripcion">Descripcion: </label>
+            <br>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="2"></textarea>
+        </fieldset>
+        <fieldset style="margin-top: 5px;">
+            <label for="precio">Precio: </label>
+            <input type="text" name="precio" id="precio">
+        </fieldset>
+        <fieldset style="margin-top: 5px;">
+            <label for="descuento">Descuento subscriptor: </label>
+            <input type="text" name="descuento" id="descuento">
+        </fieldset>
+        <fieldset style="margin-top: 5px;">
+            <label for="descuento2">Descuento por oferta: </label>
+            <input type="text" name="descuento2" id="descuento2">
+        </fieldset>
+            <div style="margin-top: 5px;">
+                <button type="submit">Guardar</button>
+                <button type="">Nuevo</button>
+                <button type="reset">Limpiar</button>
+                <button type="delete">Eliminar</button>
+                <button type="">Ver informe</button>
             </div>
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <table class="table align-middle">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Apellido</th>
-                            <th scope="col">Correo</th>
-                            <th scope="col"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Sebastian</td>
-                            <td>Arostica</td>
-                            <td>se.arostica@duocuc.cl</td>
-                            <td>
-                                <div class="col-12">
-                                    <a href="editadmin.html" class="btn btn-primary w-100 py-3">Editar perfil.</a>
-                                </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Alexis</td>
-                            <td>Sepulveda</td>
-                            <td>Alexis.Sepulveda1@gmail.com</td>
-                            <td>
-                                <div class="col-12">
-                                    <a href="editadmin.html" class="btn btn-primary w-100 py-3">Editar perfil.</a>
-                                </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Benjamin</td>
-                            <td>Caceres</td>
-                            <td>be.caceres@duocuc.cl</td>
-                            <td>
-                                <div class="col-12">
-                                    <a href="editadmin.html" class="btn btn-primary w-100 py-3">Editar perfil.</a>
-                                </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
+        </div> 
+    </form>
+    <table class="table" style="margin-top: 20px;">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Precio</th>
+            <th scope="col">%Desc Subscriptor</th>
+            <th scope="col">%Desc Oferta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>Perro</td>
+            <td>Bandana para perro</td>
+            <td>Bandana color rojo perro</td>
+            <td>Colina</td>
+            <td>Padre Alonso de Ovalle 1586, Santiago, Región Metropolitana</td>
+            <td>die.moran@duocuc.cl</td>
+            <td>***********</td>
+            <td>+56 9 35356678</td>
+            </tr>
+        </tbody>
+        </table>
+
 
 
     <!-- Footer Start -->
@@ -256,6 +264,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/validacion.js"></script>
 </body>
 
 </html>
