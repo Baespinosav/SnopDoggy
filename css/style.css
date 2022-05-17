@@ -525,32 +525,3 @@
     text-align: left;
     padding-left: 50px;
   }
-/*-------------------------------------------*/
-@media (min-width: 500px) {
-    .productos{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-    }
-}
-@media (min-width: 650px) {
-    .productos{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-
-@media (min-width: 991.98px) {
-    .productos{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-    }
-}
-
-@media (min-width: 992px) {
-    .productos{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-    }
-}
-/*-------------------------------------------*/
-/*-------------------------------------------*/
