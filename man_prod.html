@@ -133,7 +133,7 @@
     </nav>
     <!-- Navbar End -->
 
-    <form action="registrar.php" method="post" id="formulario-registro">
+    <form method="post" id="formulario-1">
       <div class="piola">
         <fieldset style="margin-top: 5px">
           <label class="left_label" for="id">ID</label>
@@ -181,12 +181,29 @@
           >
           <input type="text" name="descuento2" id="descuento2" />
         </fieldset>
+        <br>
+        <div class="imagen">
+          <div class="form-group">
+            <img
+              src="img/cristian_gomez.jpg"
+              alt=""
+              name="fotoperfil"
+              id="fotoperfil"
+            />
+            <br /><br />
+            <input
+              class="form-control-file"
+              type="file"
+              name="buscarfoto"
+              id="buscarfoto"
+            />
+          </div>
+        </div>
         <div style="margin-top: 5px">
           <button type="submit">Guardar</button>
           <button type="">Nuevo</button>
-          <button type="reset">Limpiar</button>
-          <button type="delete">Eliminar</button>
-          <button type="">Ver informe</button>
+          <button type="">Limpiar</button>
+          <button type="">Eliminar</button>
         </div>
       </div>
     </form>
@@ -401,5 +418,6 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/validacion.js"></script>
+    <script src="js/validador_mantenedor.js"></script>
   </body>
 </html>
