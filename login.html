@@ -81,8 +81,9 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sesión</a>
                     <div class="dropdown-menu m-0">
-                        <a href="login.html" class="dropdown-item active">iniciar sesión.</a>
+                        <a href="login.html" class="dropdown-item active">Iniciar sesión.</a>
                         <a href="registro.html" class="dropdown-item">Registrate.</a>
+                        <a href="login_admin.html" class="dropdown-item ">Admin.</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
@@ -106,22 +107,40 @@
                 <h6 class="text-primary text-uppercase">Inicio de sesión</h6>
                 <h1 class="display-5 text-uppercase mb-0">Inicia tú sesión para poder seguir comprando mejor.</h1>
             </div>
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-12">
-                                <input type="email" class="form-control bg-light border-0 px-4" placeholder="Correo o nombre de usuario." style="height: 55px;">
+            <div class="container">
+                <div class="row">
+        
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <!-- Inicio form -->
+                        <form method="POST" id="formulario1">
+        
+                            <div class="form-group">
+                                <label for="id_txtEmail">Email</label>
+                                <input type="email" name="txtEmail" class="form-control" id="id_txtEmail"
+                                    aria-describedby="emailHelp" placeholder="Ingrese su email aquí">
                             </div>
-                            <div class="col-12">
-                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="Contraseña." style="height: 55px;">
+                            <div class="form-group">
+                                <label for="id_txtContrasena">Password</label>
+                                <input type="password" class="form-control" name="txtContrasena" required=""
+                                    id="id_txtContrasena" placeholder="Password">
                             </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Iniciar sesión.</button>
+                            <div class="form-group">
+                                <label for="id_txtRepetirContrasena">Repetir Contraseña</label>
+                                <input type="password" class="form-control" 
+                                    name="txtRepetirContrasena" required=""
+                                    id="id_txtRepetirContrasena" placeholder="Password">
                             </div>
-                        </div>
-                    </form>
-                </div>
+                            <br>
+                            <div class="form-check">
+                                <button  type="button" 
+                                    name="showpassword" id="showpassword"
+                                    value="Ver Password">Ver password</button>
+                                <button type="submit" >Enviar</button>
+                                <button type="href">¿Olvidaste la contraseña?</button>
+                                <button type="href=registro.html">Registrate</button>
+                            </div>
+        
+                        </form>
                     </div>
                 </div>
             </div>
