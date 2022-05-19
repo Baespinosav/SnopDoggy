@@ -25,6 +25,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/ventas.css" rel="stylesheet">
 </head>
 
 <body>
@@ -99,31 +100,86 @@
         </ul>
     <h1>Historial de Ventas</h1>
     <hr>
-    <table class="table table-bordered">
+    <!-- TABLE -->
+    <table class="styled-table">
+
         <thead>
-          <tr>
-            <th>PRODUCTO</th>
-            <th>DESCRIPCION</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td> <img width="60" src="img/product-1.png" alt=""/></td>
-            <td>Producto Example<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, facilis asperiores ab eligendi fuga magnam a architecto assumenda sit explicabo dolorem deserunt autem tenetur. Expedita aliquam esse pariatur nam corporis?</td>
-          </tr>
-          <tr>
-            <td> <img width="60" src="img/product-3.png" alt=""/></td>
-            <td>Producto Example<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, facilis asperiores ab eligendi fuga magnam a architecto assumenda sit explicabo dolorem deserunt autem tenetur. Expedita aliquam esse pariatur nam corporis?</td>
-          </tr>
-          <tr>
-            <td> <img width="60" src="img/product-1.png" alt=""/></td>
-            <td>Producto Example<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, facilis asperiores ab eligendi fuga magnam a architecto assumenda sit explicabo dolorem deserunt autem tenetur. Expedita aliquam esse pariatur nam corporis?</td>
-          </tr>
-          <tr>
-            <td> <img width="60" src="img/product-2.png" alt=""/></td>
-            <td>Producto Example<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, facilis asperiores ab eligendi fuga magnam a architecto assumenda sit explicabo dolorem deserunt autem tenetur. Expedita aliquam esse pariatur nam corporis?</td>
-          </tr>
-          
+            <tr >
+                <th>Nro Factura</th>
+                <th>Fecha</th>
+                <th>Nombre Cliente</th>
+                <th>Esta Suscrito</th>
+                <th>Monto Total</th>
+                <th>Estado Actual</th>
+                <th>Opciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="active-row"> 
+                <td data-column="Nro Factura">2325</td>
+                <td data-column="Fecha">1/4/2022</td>
+                <td data-column="Nombre Cliente">Alexis Sepulveda</td>
+                <td data-column="Esta Suscrito">No</td>
+                <td data-column="Monto Total">$8.490</td>
+                <td data-column="Estado Actual">En Camino</td>
+                <td data-column="Opciones" class="table-subray">Ver Detalle</td>
+            </tr>
+            <tr class="active-row">
+                <td data-column="Nro Factura">2535</td>
+                <td data-column="Fecha">5/4/2022</td>
+                <td data-column="Nombre Cliente">Ronny Rodke</td>
+                <td data-column="Esta Suscrito">Si</td>
+                <td data-column="Monto Total">$10.000</td>
+                <td data-column="Estado Actual">En Camino</td>
+                <td data-column="Opciones" class="table-subray">Ver Detalle</td>
+            </tr>
+            <tr class="active-row">
+                <td data-column="Nro Factura">2675</td>
+                <td data-column="Fecha">7/4/2022</td>
+                <td data-column="Nombre Cliente">Billy Joe Amstrong</td>
+                <td data-column="Esta Suscrito">No</td>
+                <td data-column="Monto Total">$12.000</td>
+                <td data-column="Estado Actual">En Bodega</td>
+                <td data-column="Opciones" class="table-subray">Ver Detalle</td>
+            </tr>
+            <tr class="active-row">
+                <td data-column="Nro Factura">2734</td>
+                <td data-column="Fecha">2/5/2022</td>
+                <td data-column="Nombre Cliente">Elvis Pérez</td>
+                <td data-column="Esta Suscrito">No</td>
+                <td data-column="Monto Total">$7.000</td>
+                <td data-column="Estado Actual">Entregado</td>
+                <td data-column="Opciones" class="table-subray">Ver Detalle</td>
+            </tr>
+            <tr class="active-row">
+                <td data-column="Nro Factura"> </td>
+                <td data-column="Fecha"> </td>
+                <td data-column="Nombre Cliente"> </td>
+                <td data-column="Esta Suscrito"> </td>
+                <td data-column="Monto Total"> </td>
+                <td data-column="Estado Actual"> </td>
+                <td data-column="Opciones" class="table-subray"> </td>
+            </tr>
+            <tr class="active-row">
+                <td data-column="Nro Factura"> </td>
+                <td data-column="Fecha"> </td>
+                <td data-column="Nombre Cliente"> </td>
+                <td data-column="Esta Suscrito"> </td>
+                <td data-column="Monto Total"> </td>
+                <td data-column="Estado Actual"> </td>
+                <td data-column="Opciones" class="table-subray"> </td>
+              </tr>
+              <tr class="active-row">
+                <td data-column="Nro Factura"> </td>
+                <td data-column="Fecha"> </td>
+                <td data-column="Nombre Cliente"> </td>
+                <td data-column="Esta Suscrito"> </td>
+                <td data-column="Monto Total"> </td>
+                <td data-column="Estado Actual"> </td>
+                <td data-column="Opciones" class="table-subray"> </td>
+              </tr>
           </tbody>
-      </table>
+        </table>
+    </table>
+    
     
