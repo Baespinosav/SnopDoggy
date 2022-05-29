@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>SnopDoggy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.jpg.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid border-bottom d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Nuestra Oficina</h6>
+                        <span>Padre Alonso de Ovalle 1586, Santiago, Región Metropolitana</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center border-start border-end py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email Contacto</h6>
+                        <span>petshop.snopdoggy@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Llamanos</h6>
+                        <span>+56 9 8439 0239</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand ms-lg-5">
+            <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i>Tienda Doggy</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link ">Inicio</a>
+                <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                <!-- <a href="service.html" class="nav-item nav-link">Servicio</a> -->
+                <a href="product.html" class="nav-item nav-link">Productos</a>
+                <a href="perfil.html" class="nav-item nav-link">Perfil</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sesión</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="login.html" class="dropdown-item">Iniciar sesión.</a>
+                        <a href="registro.html" class="dropdown-item">Registrate.</a>
+                        <a href="login_admin.html" class="dropdown-item active">Admin.</a>
+                    </div>
+                </div>
+                
+                <a href="contact.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">Contacto <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <form action="registrar.php" method="post" id="formulario-registro">
+        <div class="container">
+        <fieldset style="margin-top: 5px;">
+            <label for="id">ID: </label>
+            <input name="id" id="id" type="text">
+        </fieldset>
+        <fieldset style="margin-top: 5px;">
+            <label for="categoria">Categoria: </label>
+            <select name="categoria" id="categoria">
+                <option value="1">Perros</option>
+                <option value="2">Gatos</option>
+            </select>
+        </fieldset>
+        <fieldset style="margin-top: 5px;">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre del producto">
+        </fieldset>
+        <fieldset style="margin-top: 5px;">
+            <label for="descripcion">Descripcion: </label>
+            <br>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="2"></textarea>
+        </fieldset>
+        <fieldset style="margin-top: 5px;">
+            <label for="precio">Precio: </label>
+            <input type="text" name="precio" id="precio">
+        </fieldset>
+        <fieldset style="margin-top: 5px;">
+            <label for="descuento">Descuento subscriptor: </label>
+            <input type="text" name="descuento" id="descuento">
+        </fieldset>
+        <fieldset style="margin-top: 5px;">
+            <label for="descuento2">Descuento por oferta: </label>
+            <input type="text" name="descuento2" id="descuento2">
+        </fieldset>
+            <div style="margin-top: 5px;">
+                <button type="submit">Guardar</button>
+                <button type="">Nuevo</button>
+                <button type="reset">Limpiar</button>
+                <button type="delete">Eliminar</button>
+                <button type="">Ver informe</button>
+            </div>
+        </div> 
+    </form>
+    <table class="table" style="margin-top: 20px;">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Precio</th>
+            <th scope="col">%Desc Subscriptor</th>
+            <th scope="col">%Desc Oferta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>Perro</td>
+            <td>Bandana para perro</td>
+            <td>Bandana color rojo perro</td>
+            <td>Colina</td>
+            <td>Padre Alonso de Ovalle 1586, Santiago, Región Metropolitana</td>
+            <td>die.moran@duocuc.cl</td>
+            <td>***********</td>
+            <td>+56 9 35356678</td>
+            </tr>
+        </tbody>
+        </table>
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Encuentranos en:</h5>
+                    <p class="mb-4">Para colocarte en contacto con nosotros, llamanos. O acercate a nuestra tienda.</p>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Padre Alonso de Ovalle 1586, Santiago, Región Metropolitana</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>petshop.snopdoggy@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+56 9 8439 0239</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Accesos:</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Inicio.</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nosotros.</a>
+                        <!-- <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a> -->
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nuestro Equipo.</a>
+                        <!-- <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a> -->
+                        <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contacto.</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Los más buscados:</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Inicio.</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nosotros.</a>
+                        <!-- <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a> -->
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nuestro Equipo.</a>
+                        <!-- <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a> -->
+                        <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contacto.</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Para más información:</h5>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3" placeholder="Tú correo.">
+                            <button class="btn btn-primary">Registrate</button>
+                        </div>
+                    </form>
+                    <h6 class="text-uppercase mt-4 mb-3">Síguinos en nuestras redes:</h6>
+                    <div class="d-flex">
+                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                        <a class="btn btn-outline-primary btn-square" href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 text-center text-body">
+                    <a class="text-body" href="">Terminos & Condiciones.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Politicas de privacidad.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Soporte.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Pagos.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Ayuda.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Preguntas frecuentes.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white" href="#">SnopDoggy's.</a> Todo los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Diseñado por: <a class="text-white" href="https://htmlcodex.com">Oe pucón.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/validacion.js"></script>
+</body>
+
+</html>
