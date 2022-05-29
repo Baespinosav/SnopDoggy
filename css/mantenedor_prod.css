@@ -1,0 +1,76 @@
+.fila{
+    margin-top: 20px;
+}
+
+.label{
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;;
+    font-size: 90%;
+}
+
+.table{
+    border-collapse: collapse; 
+}
+
+
+
+.img{
+    height: 150px;
+    width: 150px;
+    float: right;
+
+}
+.alinear{
+    height: 200px;
+    width: 150px;
+    color: rgb(91, 0, 119);
+    float: right;
+    
+}
+
+.radiobtn{
+    width: 400px;
+    display: inline-block;
+}
+
+
+.radiobtn .radioadmin{
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.row{
+    display: auto;
+}
+
+
+
+.left_label{
+    width: 300px;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+#direccion{
+    height: 130px;
+    width: 400px;
+    vertical-align: text-top;
+    text-align: text-top;
+}
+
+#direccion::placeholder{
+    vertical-align: text-top;
+    text-align: text-top;
+}
+
+.piola{
+    width: 800px;
+    display: inline-block;
+}
+
+.imagen{
+    margin-top: 20px;    
+    float: right;
+}
+
