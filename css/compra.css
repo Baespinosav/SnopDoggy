@@ -1,0 +1,18 @@
+.botonc{
+    background-color: rgb(136, 11, 185);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 5px;
+    width: 220px;
+    border: 4px solid rgb(97, 10, 124);
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    display: inline-block;
+    }
+
+.botonc:hover{
+    background-color: rgb(14, 17, 207);
+    border: 4px solid rgb(11, 78, 167);
+    color: rgb(255, 255, 255);
+    }
