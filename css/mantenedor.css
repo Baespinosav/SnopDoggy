@@ -74,3 +74,37 @@
     float: right;
 }
 
+.botones{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.btn_primero{
+    border-color: rgb(54, 50, 50);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 6px;
+}
+
+.btn_segundo{
+    border-color: rgb(54, 50, 50);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 6px;
+}
+
+.btn_tercero{
+    border-color: rgb(54, 50, 50);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 6px;
+}
+
+.marco{
+    width: 280px;
+}
+
+.btn_cuarto{
+    margin-left: 150px;
+}
