@@ -6,31 +6,30 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <!-- Favicon -->
-    <link href="img/favicon.jpg.png" rel="icon" />
+    <link href="img/favicon.jpg.png" rel="icon">
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
 
     <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/mantenedor_prod.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Mantenedor Css -->
+    <link href="css/mantenedor.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/validacion.css">
   </head>
 
   <body>
@@ -133,86 +132,63 @@
     </nav>
     <!-- Navbar End -->
 
-    <form method="post" id="formulario-1">
-      <div class="piola">
-        <fieldset style="margin-top: 5px">
-          <label class="left_label" for="id">ID</label>
-          <input name="id" id="id" type="text" />
-        </fieldset>
-        <fieldset style="margin-top: 5px">
-          <label class="left_label" for="categoria">Categoria</label>
-          <select name="categoria" id="categoria">
-            <option value="1">Perros</option>
-            <option value="2">Gatos</option>
-            <option value="3">Generico</option>
-          </select>
-        </fieldset>
-        <fieldset style="margin-top: 5px">
-          <label class="left_label" for="nombre">Nombre</label>
-          <input
-            type="text"
-            name="nombre"
-            id="nombre"
-            placeholder="Nombre del producto"
-          />
-        </fieldset>
-        <fieldset style="margin-top: 5px">
-          <label class="left_label" for="descripcion">Descripcion</label>
-          <textarea
-            name="descripcion"
-            id="descripcion"
-            cols="30"
-            rows="2"
-          ></textarea>
-        </fieldset>
-        <fieldset style="margin-top: 5px">
-          <label class="left_label" for="precio">Precio</label>
-          <input type="text" name="precio" id="precio" />
-        </fieldset>
-        <fieldset style="margin-top: 5px">
-          <label class="left_label" for="descuento"
-            >Descuento subscriptor</label
-          >
-          <input type="text" name="descuento" id="descuento" />
-        </fieldset>
-        <fieldset style="margin-top: 5px">
-          <label class="left_label" for="descuento2"
-            >Descuento por oferta</label
-          >
-          <input type="text" name="descuento2" id="descuento2" />
-        </fieldset>
-        <br>
-        <div class="imagen">
-          <div class="form-group">
-            <img
-              src="img/cristian_gomez.jpg"
-              alt=""
-              name="fotoperfil"
-              id="fotoperfil"
-            />
-            <br /><br />
-            <input
-              class="form-control-file"
-              type="file"
-              name="buscarfoto"
-              id="buscarfoto"
-            />
-          </div>
+    <div class="container">
+      <div class="row">
+          <h1> Mantenedor de productos </h1> 
+      </div>
+      <div class="row">
+          <form  action="registro.php" method="post" name="registro" id="registro">
+              <div class="piola">
+                  <label class="left_label" for="id_prod">ID</label>
+                  <input type="text" class="borde" name="id_prod" id="id_prod">
+                  <br>
+                  <label class="left_label" for="categoria">Categoría</label>
+                  <select name="categoria" id="categoria">
+                    <option value="1">Perros</option>
+                    <option value="2">Gatos</option>
+                    <option value="3">Genérico</option>
+                  </select>
+                  <br>
+                  <label class="left_label" for="nombre">Nombre</label>
+                  <input type="text" class="marco" name="nombre" id="nombre" placeholder="Nombre producto">
+                  <br>
+                  <label class="left_label" for="descripcion">Descripción</label>
+                  <textarea name="descripcion" id="descripcion" placeholder="Descripción producto"></textarea>
+                  <br>
+                  <label class="left_label" for="precio">Precio</label>
+                  <input type="text" class="marco" name="precio" id="precio" placeholder="Precio producto">
+                  <br>
+                  <label class="left_label" for="descuento">Descuento subscriptor</label>
+                  <input type="text" class="marco" name="descuento" id="descuento" placeholder="Descuento producto">
+                  <br>
+                  <label class="left_label" for="descuento2">Descuento por oferta</label>
+                  <input type="text" class="marco" name="descuento2" id="descuento2" placeholder="Descuento oferta">
+                  <br>
+              </div>
+              <div class="imagen">
+                  
+                      <div class="form-group">
+                          <img src="img/cristian_gomez.jpg" alt="" name="fotoperfil" id="fotoperfil">
+                          <br><br>
+                          <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
+                      </div>
+                  
+              </div>
         </div>
-        <div style="margin-top: 5px">
-          <button type="submit">Guardar</button>
-          <button type="">Nuevo</button>
-          <button type="">Eliminar</button>
-        </div>
+        <div class="botones">
+          <button type="submit" class="btn_primero">Guardar</button>
+          <button type=""       class="btn_segundo">Nuevo</button>
+          <button type="delete" class="btn_tercero">Eliminar</button>
+      </div>
       </div>
     </form>
     <table class="table" style="margin-top: 20px">
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Categoria</th>
+          <th scope="col">Categoría</th>
           <th scope="col">Nombre</th>
-          <th scope="col">Descripcion</th>
+          <th scope="col">Descripción</th>
           <th scope="col">Precio</th>
           <th scope="col">%Desc Subscriptor</th>
           <th scope="col">%Desc Oferta</th>
@@ -239,7 +215,7 @@
         </tr>
         <tr>
           <th scope="row">3</th>
-          <td>Generico</td>
+          <td>Genérico</td>
           <td>Correa para mascotas</td>
           <td>Color rojo, 5 metros.</td>
           <td>$2.990</td>
@@ -248,7 +224,7 @@
         </tr>
         <tr>
           <th scope="row">4</th>
-          <td>Generico</td>
+          <td>Genérico</td>
           <td>Identificadores de mascotas</td>
           <td>Color amarillo
             Medidas : 4 cm X 2 cm.</td>
@@ -288,7 +264,7 @@
               Encuentranos en:
             </h5>
             <p class="mb-4">
-              Para colocarte en contacto con nosotros, llamanos. O acercate a
+              Para colocarte en contacto con nosotros, llámanos. O acércate a
               nuestra tienda.
             </p>
             <p class="mb-2">
@@ -364,11 +340,11 @@
                   class="form-control p-3"
                   placeholder="Tú correo."
                 />
-                <button class="btn btn-primary">Registrate</button>
+                <button class="btn btn-primary">Regístrate</button>
               </div>
             </form>
             <h6 class="text-uppercase mt-4 mb-3">
-              Síguinos en nuestras redes:
+              Síguenos en nuestras redes:
             </h6>
             <div class="d-flex">
               <a class="btn btn-outline-primary btn-square me-2" href="#"
@@ -386,9 +362,9 @@
             </div>
           </div>
           <div class="col-12 text-center text-body">
-            <a class="text-body" href="">Terminos & Condiciones.</a>
+            <a class="text-body" href="">Términos & Condiciones.</a>
             <span class="mx-1">|</span>
-            <a class="text-body" href="">Politicas de privacidad.</a>
+            <a class="text-body" href="">Políticas de privacidad.</a>
             <span class="mx-1">|</span>
             <a class="text-body" href="">Soporte.</a>
             <span class="mx-1">|</span>
@@ -435,7 +411,10 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="js/validacion.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/validador_mantenedor.js"></script>
   </body>
 </html>
