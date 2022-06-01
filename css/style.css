@@ -333,6 +333,12 @@
 }
 
 .team-carousel .owl-nav {
+    
+    
+.imagen{
+    margin-top: 20px;    
+    float: right;
+}
     position: absolute;
     width: 50px;
     height: 160px;
