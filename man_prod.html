@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>SnopDoggy</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
     <link href="img/favicon.jpg.png" rel="icon">
@@ -27,9 +27,9 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Mantenedor Css -->
-    <link href="css/mantenedor.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/validacion.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
 
   <body>
@@ -133,55 +133,77 @@
     <!-- Navbar End -->
 
     <div class="container">
-      <div class="row">
+      <div class="row ">
           <h1> Mantenedor de productos </h1> 
       </div>
-      <div class="row">
-          <form  action="registro.php" method="post" name="registro" id="registro">
-              <div class="piola">
-                  <label class="left_label" for="id_prod">ID</label>
-                  <input type="text" class="borde" name="id_prod" id="id_prod">
-                  <br>
-                  <label class="left_label" for="categoria">Categoría</label>
-                  <select name="categoria" id="categoria">
-                    <option value="1">Perros</option>
-                    <option value="2">Gatos</option>
-                    <option value="3">Genérico</option>
-                  </select>
-                  <br>
-                  <label class="left_label" for="nombre">Nombre</label>
-                  <input type="text" class="marco" name="nombre" id="nombre" placeholder="Nombre producto">
-                  <br>
-                  <label class="left_label" for="descripcion">Descripción</label>
-                  <textarea name="descripcion" id="descripcion" placeholder="Descripción producto"></textarea>
-                  <br>
-                  <label class="left_label" for="precio">Precio</label>
-                  <input type="text" class="marco" name="precio" id="precio" placeholder="Precio producto">
-                  <br>
-                  <label class="left_label" for="descuento">Descuento subscriptor</label>
-                  <input type="text" class="marco" name="descuento" id="descuento" placeholder="Descuento producto">
-                  <br>
-                  <label class="left_label" for="descuento2">Descuento por oferta</label>
-                  <input type="text" class="marco" name="descuento2" id="descuento2" placeholder="Descuento oferta">
-                  <br>
-              </div>
-              <div class="imagen">
-                  
+      <div class="row g-5">
+          <form action="formulario.php" method="post" name="formulario" id="formulario">
+                <div class="piola">
+                  <div class="row">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                          <img src="img/cristian_gomez.jpg" alt="" name="fotoperfil" id="fotoperfil">
-                          <br><br>
-                          <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
+                        <label class="left_label" for="id_prod">ID</label>
+                        <input type="text" class="borde" name="id_prod" id="id_prod">
                       </div>
+                      
+                      <div class="form-group">
+                        <label class="left_label" for="categoria">Categoría</label>
+                        <select name="categoria" id="categoria">
+                          <option value="1">Perros</option>
+                          <option value="2">Gatos</option>
+                          <option value="3">Genérico</option>
+                        </select>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label class="left_label" for="nombre">Nombre</label>
+                        <input type="text" class="marco" name="nombre" id="nombre" placeholder="Nombre producto">
+                        
+                      </div>
+                      <div class="form-group">
+                        <label class="left_label" for="descripcion">Descripción</label>
+                        <textarea name="descripcion" id="descripcion" placeholder="Descripción producto"></textarea>
+                        
+                      </div>
+                      <div class="form-group">
+                        <label class="left_label" for="precio">Precio</label>
+                        <input type="text" class="marco" name="precio" id="precio" placeholder="Precio producto">
+                        
+                      </div>
+                      <div class="form-group">
+                        <label class="left_label" for="descuento">Descuento subscriptor</label>
+                        <input type="text" class="marco" name="descuento" id="descuento" placeholder="Descuento producto">
+                        
+                      </div>
+                      
+                      <div class="form-group">
+                        <label class="left_label" for="descuento2">Descuento por oferta</label>
+                        <input type="text" class="marco" name="descuento2" id="descuento2" placeholder="Descuento oferta">
+                        
+                      </div>
+                  </div>
+                  <div class="col-sm-3">
+                      <div class="form-group">
+                        <img src="img/cristian_gomez.jpg" alt="" name="fotoperfil" id="fotoperfil">
+                        <br><br>
+                        <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
+                      </div>
+                  </div>
                   
               </div>
         </div>
-        <div class="botones">
+        <div class="row borde-bootstrap-row">
           <button type="submit" class="btn_primero">Guardar</button>
+          &nbsp;&nbsp;&nbsp;
           <button type=""       class="btn_segundo">Nuevo</button>
+          &nbsp;&nbsp;&nbsp;
           <button type="delete" class="btn_tercero">Eliminar</button>
       </div>
       </div>
+    </div>
+    </div>
     </form>
+  </div>
     <table class="table" style="margin-top: 20px">
       <thead>
         <tr>
@@ -416,5 +438,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/validador_mantenedor.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/validacion-formularios.js"></script>
   </body>
 </html>
