@@ -590,3 +590,12 @@
     vertical-align: text-top;
     text-align: text-top;
 }
+.left_label2{
+    width: 100px;
+    display: inline-block;
+}
+
+.botones{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
