@@ -23,50 +23,60 @@
     <main>
       <div id="details" class="clearfix">
         <div id="client">
-          <div class="to">FACTURA A:</div>
-          <h2 class="name"> Alexis Sepulveda</h2>
-          <div class="address">Mozart 5090, San Joaquin, RM</div>
-          <div class="celular">+569 78146592</div>
+          <div class="to">Detalle de factura: #2325</div>
+          <h2 class="name">Comprador: Alexis Sepulveda</h2>
+          <div class="address">Direccion de envio: Mozart 5090, San Joaquin, RM</div>
           <div class="email"><a href="correo">Alexis.Sepulveda1@gmail.com</a></div>
-        </div>
-        <div id="invoice">
-          <h1>Nro.Factura: #2325 </h1>
-          <div class="date">Fecha De Factura: 01/04/2022</div>
-          <div class="date">Fecha De Vencimiento: 30/05/2022</div>
-          <div></div>
         </div>
       </div>
       <table border="0" cellspacing="0" cellpadding="0">
         <thead>
           <tr>
-            <th class="no">NRO.Producto</th>
-            <th class="desc">DESCRIPCIÓN</th>
-            <th class="unit">PRECIO POR UNIDAD</th>
-            <th class="qty">CANTIDAD</th>
-            <th class="total">TOTAL</th>
+            <th class="no">ID</th>
+            <th class="desc">CATEGORIA</th>
+            <th class="unit">NOMBRE</th>
+            <th class="qty">PRECIO</th>
+            <TH class="desc">% DESCUENTO SUSCRIPCION</TH>
+            <th class="unit">% DESCUENTO OFERTA</TH>
+            <th class="total">PRECIO FINAL</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td class="no">01</td>
-            <td class="desc"><h3>Bandana de Perro </h3>Bandana de perro Talla S, color rojo.</td>
-            <td class="unit">$3.990</td>
-            <td class="qty">1</td>
+            <td class="desc"><h3>Perro</h3></td>
+            <td class="unit"><h4>Bandana de Perro</h4></td>
+            <td class="qty">$3.990</td>
+            <td class="desc">0%</td>
+            <td class="unit">0%</td>
             <td class="total">$3.990</td>
           </tr>
           <tr>
             <td class="no">02</td>
-            <td class="desc"><h3>Identificador de Mascota</h3>Identificador de mascota con forma de hueso, color amarillo.</td>
-            <td class="unit">$1.500</td>
-            <td class="qty">1</td>
+            <td class="desc"><h5>Miscelaneo</h5></td>
+            <td class="unit"><h6>Identificador de Mascota</h6></td>
+            <td class="qty">$1.500</td>
+            <td class="desc">0%</td>
+            <td class="unit">0%</td>
             <td class="total">$1.500</td>
           </tr>
           <tr>
             <td class="no">03</td>
-            <td class="desc"><h3>Correa para mascota</h3>Correa para perro color rojo, largo 2 metros.</td>
-            <td class="unit">$2.990</td>
-            <td class="qty">1</td>
+            <td class="desc"><h7>Perro</h7></td>
+            <td class="unit"><h8>Correa para Perro 2Mts</h8></td>
+            <td class="qty">$2.990</td>
+            <td class="desc">0%</td>
+            <td class="unit">0%</td>
             <td class="total">$2.990</td>
+          </tr>
+          <tr>
+            <td class="no"></td>
+            <td class="desc"></td>
+            <td class="unit"></td>
+            <td class="qty"></td>
+            <td class="desc"></td>
+            <td class="unit"></td>
+            <td class="total"><a href="historial_ventas.html">VOLVER AL HISTORIAL DE VENTAS</a></td>
           </tr>
         </tbody>
         <tfoot>
@@ -77,7 +87,7 @@
           </tr>
         </tfoot>
       </table>
-      <div id="thanks">Gracias por su compra</div>
+
       <div id="notices">
         <div>Información : </div>
         <div class="notice">El total de la compra viene con IVA incluido</div>
