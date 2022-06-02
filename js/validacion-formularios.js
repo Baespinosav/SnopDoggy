@@ -25,6 +25,9 @@ $('#registro').validate({
             minlength : 10,
             equalTo : "#password",
         },
+        "cantidad": {
+            required: true,
+        },
     },
     messages: {
         "rut": {
@@ -51,6 +54,9 @@ $('#registro').validate({
             required: 'Debe repetir la misma password',
             minlength: 'La mínima cantidad de caracteres de la contraseña es 10',
             equalTo: 'La repetición de contraseña debe coincidir con la contraseña original',
+        },
+        "cantidad": {
+            required: 'Debe ingresar una cantidad',
         },
     }
 });
