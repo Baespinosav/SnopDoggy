@@ -570,3 +570,23 @@
     margin-top: 20px;    
     float: right;
 }
+
+
+.radiobtn .radioadmin{
+    margin-left: 10px;
+    display: inline-block;
+}
+
+
+
+#direccion{
+    height: 130px;
+    width: 400px;
+    vertical-align: text-top;
+    text-align: text-top;
+}
+
+#direccion::placeholder{
+    vertical-align: text-top;
+    text-align: text-top;
+}
