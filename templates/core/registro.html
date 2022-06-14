@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de cliente</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>SnopDoggy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.jpg.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+     <!-- Topbar Start -->
+     <div class="container-fluid border-bottom d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Nuestra Oficina</h6>
+                        <span>Padre Alonso de Ovalle 1586, Santiago, Región Metropolitana</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center border-start border-end py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email Contacto</h6>
+                        <span>petshop.snopdoggy@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Llamanos</h6>
+                        <span>+56 9 8439 0239</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+     <!-- Navbar Start -->
+     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand ms-lg-5">
+            <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i>Tienda Doggy</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link ">Inicio</a>
+                <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                <!-- <a href="service.html" class="nav-item nav-link">Servicio</a> -->
+                <a href="product_client.html" class="nav-item nav-link">Productos</a>
+                <a href="perfil.html" class="nav-item nav-link">Perfil</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sesión</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="login.html" class="dropdown-item">Iniciar sesión.</a>
+                        <a href="registro.html" class="dropdown-item active">Registrate.</a>
+                        <a href="login_admin.html" class="dropdown-item ">Admin.</a>
+                    </div>
+                </div>
+                
+                <a href="contact.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">Contacto <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <div class="container">
+        <div class="row borde-bootstrap-row">
+            <h4>Registro de cliente</h4>
+        </div>
+        <br>
+        <form class="borde-bootstrap-row" action="registro.php" method="post" name="registro" id="registro">
+            <div class="row borde-bootstrap-row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="rut">RUT</label>
+                        <input class="form-control" type="text" name="rut" id="rut" 
+                            aria-describedby="rut-help" placeholder="Ingresa tu RUT">
+                        <small id="rut-help" class="form-text text-muted">
+                            Escribe tu RUT sin puntos y con guión, por ejemplo: 16560241-2
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombres">Nombres</label>
+                        <input class="form-control" type="text" name="nombres" id="nombres" 
+                            placeholder="Escribe aquí tus nombres">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos</label>
+                        <input class="form-control" type="text" name="apellidos" id="apellidos" 
+                            placeholder="Escribe aquí tus apellidos">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input class="form-control" type="email" name="correo" id="correo" 
+                            aria-describedby="correo-help" placeholder="Escribe aquí tu correo">
+                        <small id="correo-help" class="form-text text-muted">
+                            Escribe tu correo incluyendo: nombre, @ y dominio, por ejemplo: atorres@duocuc.cl
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Dirección</label>
+                        <textarea class="form-control" name="direccion" id="direccion" cols="60" rows="5" 
+                            aria-describedby="direccion-help"placeholder="Escribe aquí tu dirección"></textarea>
+                        <small id="direccion-help" class="form-text text-muted">
+                            Escribe tu direción completa con: calle, número, comuna y región
+                        </small>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="consubscripcion" name="consubscripcion" 
+                            aria-describedby="consubscripcion-help">
+                        <label class="form-check-label" for="consubscripcion">Con subscripción</label>
+                        <small id="consubscripcion-help" class="form-text text-muted">
+                            Deseo subscribirme con un aporte de $3.000 mensuales
+                            y obtener un 5% de descuento en mis copmpras
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <br>
+                        <label for="password">Contraseña</label>
+                        <input class="form-control" type="password" name="password" id="password" 
+                            aria-describedby="password-help" placeholder="Escribe aquí tu contraseña">
+                        <small id="password-help" class="form-text text-muted">
+                            La contraseña debe tener un mínimo de 10 caracteres y 
+                            debe contener al menos una mayúscula y un número
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Repetir contraseña</label>
+                        <input class="form-control" type="password" name="password2" id="password2" 
+                            placeholder="Repite aquí tu contraseña">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <img src="images/cristian_gomez.jpg" alt="" name="fotoperfil" id="fotoperfil">
+                        <br><br>
+                        <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
+                    </div>
+                </div>
+            </div>
+            <div class="row borde-bootstrap-row">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                &nbsp;&nbsp;&nbsp;
+                <button type="reset" class="btn btn-secondary">Limpiar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/validacion-formularios.js"></script>
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

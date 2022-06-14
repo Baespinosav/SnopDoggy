@@ -1,0 +1,275 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de cliente</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>SnopDoggy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+
+
+
+    <meta charset="utf-8">
+    <title>SnopDoggy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.jpg.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid border-bottom d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Nuestra Oficina</h6>
+                        <span>Padre Alonso de Ovalle 1586, Santiago, Región Metropolitana</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center border-start border-end py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email Contacto</h6>
+                        <span>petshop.snopdoggy@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Llamanos</h6>
+                        <span>+56 9 8439 0239</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand ms-lg-5">
+            <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i>Tienda Doggy</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link ">Inicio</a>
+                <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                <!-- <a href="service.html" class="nav-item nav-link">Servicio</a> -->
+                <a href="product_client.html" class="nav-item nav-link">Productos</a>
+                <a href="perfil.html" class="nav-item nav-link">Perfil</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sesión</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="login.html" class="dropdown-item active">Iniciar sesión.</a>
+                        <a href="registro.html" class="dropdown-item">Registrate.</a>
+                        <a href="login_admin.html" class="dropdown-item ">Admin.</a>
+                    </div>
+                </div>
+                
+                <a href="contact.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">Contacto <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-primary text-uppercase">Inicio de sesión</h6>
+                <h1 class="display-5 text-uppercase mb-0">Inicia tú sesión para poder seguir comprando mejor.</h1>
+            </div>
+            <div class="container">
+                <form class="borde-bootstrap-row" action="registro.php" method="post" name="registro" id="registro">
+                    <div class="row borde-bootstrap-row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="correo">Correo</label>
+                                <input class="form-control" type="email" name="correo" id="correo" 
+                                    aria-describedby="correo-help" placeholder="Escribe aquí tu correo">
+                                <small id="correo-help" class="form-text text-muted">
+                                    Escribe tu correo incluyendo: nombre, @ y dominio, por ejemplo: atorres@duocuc.cl
+                                </small>
+                            </div>
+                            <div class="form-group">
+                                <br>
+                                <label for="password">Contraseña</label>
+                                <input class="form-control" type="password" name="password" id="password" 
+                                    aria-describedby="password-help" placeholder="Escribe aquí tu contraseña">
+                                <small id="password-help" class="form-text text-muted">
+                                    La contraseña debe tener un mínimo de 10 caracteres y 
+                                    debe contener al menos una mayúscula y un número
+                                </small>
+                            </div>
+
+
+                            <div class="row borde-bootstrap-row">
+                                <button type="submit" class="btn btn-primary">Ingresar</button>
+                                &nbsp;&nbsp;&nbsp;
+                                <button type="reset" class="btn btn-secondary">Registrate</button> 
+                                &nbsp;&nbsp;&nbsp;
+                                <button type="reset" class="btn btn-secondary">Olvidé mi contraseña</button>
+                            </div> 
+                        </form>
+                        <a href="#">Selecciona este link para simular que ingresaste como "Cliente"</a>
+                        <br>
+                        <a href="#">Selecciona este link para simular que ingresaste como "Administrador"</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Encuentranos en:</h5>
+                    <p class="mb-4">Para colocarte en contacto con nosotros, llamanos. O acercate a nuestra tienda.</p>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Padre Alonso de Ovalle 1586, Santiago, Región Metropolitana</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>petshop.snopdoggy@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+56 9 8439 0239</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Accesos:</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Inicio.</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nosotros.</a>
+                        <!-- <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a> -->
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nuestro Equipo.</a>
+                        <!-- <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a> -->
+                        <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contacto.</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Los más buscados:</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Inicio.</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nosotros.</a>
+                        <!-- <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a> -->
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nuestro Equipo.</a>
+                        <!-- <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a> -->
+                        <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contacto.</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Para más información:</h5>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3" placeholder="Tú correo.">
+                            <button class="btn btn-primary">Registrate</button>
+                        </div>
+                    </form>
+                    <h6 class="text-uppercase mt-4 mb-3">Síguinos en nuestras redes:</h6>
+                    <div class="d-flex">
+                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                        <a class="btn btn-outline-primary btn-square" href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 text-center text-body">
+                    <a class="text-body" href="">Terminos & Condiciones.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Politicas de privacidad.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Soporte.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Pagos.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Ayuda.</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Preguntas frecuentes.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white" href="#">SnopDoggy's.</a> Todo los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Diseñado por: <a class="text-white" href="https://htmlcodex.com">Oe pucón.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/validacion-formularios.js"></script>
+
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

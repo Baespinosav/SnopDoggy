@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Historial de compra</title>
+    <link rel="stylesheet" href="{% static 'core/css/factura.css' %}" media="all" />
+    <!-- Favicon -->
+    
+  </head>
+  <body>
+    <header class="clearfix">
+      <div id="logo">
+        <img class="logo" src="img/favicon.jpg.png">
+      </div>
+      <div id="company">
+        <h2 class="name">SnopDoggy</h2>
+        <div>Padre Alonso de Ovalle 1586, Santiago, Región Metropolitana</div>
+        <div>+56 9 8439 0239</div>
+        <div><a href="Correo">pet_shop_doggy@gmail.com</a></div>
+      </div>
+      </div>
+    </header>
+    <main>
+      <div id="details" class="clearfix">
+        <div id="client">
+          <div class="to">Compras de:</div>
+          <h2 class="name"> Alexis Sepulveda</h2>
+          <div class="address">Mozart 5090, San Joaquin, RM</div>
+          <div class="celular">+569 78146592</div>
+          <div class="email"><a href="correo">Alexis.Sepulveda1@gmail.com</a></div>
+        </div>
+        </div>
+      </div>
+      <table border="0" cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th class="no">NRO.Factura</th>
+            <th class="desc">Fecha</th>
+            <th class="unit">Monto total</th>
+            <th class="qty">Estado actual</th>
+            <th class="total">Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="no">#2325</td>
+            <td class="desc"><h3>01/04/2022</h3></td>
+            <td class="unit">$8.490</td>
+            <td class="qty">En camino</td>
+            <td><a href="facture.html"> Ver Detalles</a></td>
+          </tr>
+          <tr>
+            <td class="no">#2430</td>
+            <td class="desc"><h3>17/03/2022</h3></td>
+            <td class="unit">$15.360</td>
+            <td class="qty">Entregado</td>
+            <td><a href="facture.html"> Ver Detalles</a></td>
+          </tr>
+          <tr>
+            <td class="no">#3314</td>
+            <td class="desc"><h3>31/02/2022</h3></td>
+            <td class="unit">$7.200</td>
+            <td class="qty">Entregado</td>
+            <td><a href="facture.html"> Ver Detalles</a></td>
+          </tr>
+          <tr>
+            <td class="no">#3390</td>
+            <td class="desc"><h3>16/02/2022</h3></td>
+            <td class="unit">$5.590</td>
+            <td class="qty">Entregado</td>
+            <td><a href="facture.html"> Ver Detalles</a></td>
+          </tr>
+          <tr>
+            <td class="no">#3395</td>
+            <td class="desc"><h3>03/02/2022</h3></td>
+            <td class="unit">$2.990</td>
+            <td class="qty">Cancelado</td>
+            <td><a href="facture.html"> Ver Detalles</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><h3></h3></td>
+            <td></td>
+            <td></td>
+            <td class="total"><a href="perfil.html" class="btn btn-primary text-uppercase py-2 px-4 my-3">VOLVER AL PERFIL</a></td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+      <div id="thanks">Gracias por sus compras</div>
+      <div id="notices">
+        <div>Información : </div>
+        <div class="notice">El total de la compra viene con IVA incluido</div>
+      </div>
+    </main>
+    <footer>
+      Invoice was created on a computer and is valid without the signature and seal.
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>FACTURA</title>
+    <link rel="stylesheet" href="{% static 'core/css/factura.css' %}" media="all" />
+    <!-- Favicon -->
+    <link href="img/favicon.jpg.png" rel="icon">
+  </head>
+  <body>
+    <header class="clearfix">
+      <div id="logo">
+        <img class="logo" src="img/favicon.jpg.png">
+      </div>
+      <div id="company">
+        <h2 class="name">SnopDoggy</h2>
+        <div>Padre Alonso de Ovalle 1586, Santiago, Región Metropolitana</div>
+        <div>+56 9 8439 0239</div>
+        <div><a href="Correo">pet_shop_doggy@gmail.com</a></div>
+      </div>
+      </div>
+    </header>
+    <main>
+      <div id="details" class="clearfix">
+        <div id="client">
+          <div class="to">Detalle de factura: #2325</div>
+          <h2 class="name">Comprador: Alexis Sepulveda</h2>
+          <div class="address">Direccion de envio: Mozart 5090, San Joaquin, RM</div>
+          <div class="email"><a href="correo">Alexis.Sepulveda1@gmail.com</a></div>
+        </div>
+      </div>
+      <table border="0" cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th class="no">ID</th>
+            <th class="desc">CATEGORIA</th>
+            <th class="unit">NOMBRE</th>
+            <th class="qty">PRECIO</th>
+            <TH class="desc">% DESCUENTO SUSCRIPCION</TH>
+            <th class="unit">% DESCUENTO OFERTA</TH>
+            <th class="total">PRECIO FINAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="no">01</td>
+            <td class="desc"><h3>Perro</h3></td>
+            <td class="unit"><h4>Bandana de Perro</h4></td>
+            <td class="qty">$3.990</td>
+            <td class="desc">0%</td>
+            <td class="unit">0%</td>
+            <td class="total">$3.990</td>
+          </tr>
+          <tr>
+            <td class="no">02</td>
+            <td class="desc"><h5>Miscelaneo</h5></td>
+            <td class="unit"><h6>Identificador de Mascota</h6></td>
+            <td class="qty">$1.500</td>
+            <td class="desc">0%</td>
+            <td class="unit">0%</td>
+            <td class="total">$1.500</td>
+          </tr>
+          <tr>
+            <td class="no">03</td>
+            <td class="desc"><h7>Perro</h7></td>
+            <td class="unit"><h8>Correa para Perro 2Mts</h8></td>
+            <td class="qty">$2.990</td>
+            <td class="desc">0%</td>
+            <td class="unit">0%</td>
+            <td class="total">$2.990</td>
+          </tr>
+          <tr>
+            <td class="no"></td>
+            <td class="desc">ESTADO DE PEDIDO: </td>
+            <td class="unit">En camino...</td>
+            <td class="qty"></td>
+            <td class="desc"></td>
+            <td class="unit"></td>
+            <td class="total"><a href="historial_ventas.html">VOLVER AL HISTORIAL DE VENTAS</a></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2">TOTAL DE COMPRA : </td>
+            <td>$8.490</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div id="notices">
+        <div>Información : </div>
+        <div class="notice">El total de la compra viene con IVA incluido</div>
+      </div>
+    </main>
+    <footer>
+      Invoice was created on a computer and is valid without the signature and seal.
+    </footer>
+  </body>
+</html>

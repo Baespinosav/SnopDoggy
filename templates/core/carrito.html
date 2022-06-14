@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Historial de compra</title>
+    <link rel="stylesheet" href="css/factura copy.css" media="all" />
+    <link rel="stylesheet" href="{% static 'core/css/factura copy.css' %}" media="all" />
+    <!-- Favicon -->
+    
+  </head>
+  <body>
+    <header class="clearfix">
+      <div id="logo">
+        <img class="logo" src="img/favicon.jpg.png">
+      </div>
+      <div id="company">
+        <h2 class="name">SnopDoggy</h2>
+        <div>Padre Alonso de Ovalle 1586, Santiago, Región Metropolitana</div>
+        <div>+56 9 8439 0239</div>
+        <div><a href="Correo">pet_shop_doggy@gmail.com</a></div>
+      </div>
+      </div>
+    </header>
+    <main>
+      <div id="details" class="clearfix">
+        <div id="client">
+          <div class="to">Carrito de:</div>
+          <h2 class="name"> Alexis Sepulveda</h2>
+          <div class="address">Mozart 5090, San Joaquin, RM</div>
+          <div class="celular">+569 78146592</div>
+          <div class="email"><a href="correo">Alexis.Sepulveda1@gmail.com</a></div>
+        </div>
+        </div>
+      </div>
+      <h1>CARRITO DE COMPRAS</h1>
+      <table border="0" cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th class="cat">Categoria</th>
+            <th class="nom">Nombre producto</th>
+            <th class="prec">Precio</th>
+            <th class="desc">% Desc subscriptor</th>
+            <th class="descof">% Desc oferta</th>
+            <th class="precf">Precio final</th>
+            <th class="opc">Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cat">Perros</td>
+            <td class="nom"><h3>Saco Royan Canin 3kg</h3></td>
+            <td class="prec">$8.000</td>
+            <td class="desc">0%</td>
+            <td class="descof">2%</td>
+            <td class="precf">$7.840</td>
+            <td class="opc">Eliminar</td>
+          </tr>
+          <tr>
+            <td class="cat">Perros</td>
+            <td class="nom"><h3>Hueso gris 3kg</h3></td>
+            <td class="prec">$1.260</td>
+            <td class="desc">0%</td>
+            <td class="descof">0%</td>
+            <td class="precf">$1.260</td>
+            <td class="opc">Eliminar</td>
+          </tr>
+          <tr>
+            <td class="cat">Gatos</td>
+            <td class="nom"><h3>Raton de juguete</h3></td>
+            <td class="prec">$1.000</td>
+            <td class="desc">0%</td>
+            <td class="descof">0%</td>
+            <td class="precf">$.1000</td>
+            <td class="opc">Eliminar</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><h3></h3></td>
+            <td></td>
+            <td></td>
+            <td class="btn btn-primary text-uppercase py-2 px-4 my-3">TOTAL</td>
+            <td class="precf">$10.000</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><h3></h3></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="total"><a href=".html" class="btn btn-primary text-uppercase py-2 px-4 my-3">Pagar</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><h3></h3></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="total"><a href="perfil.html" class="btn btn-primary text-uppercase py-2 px-4 my-3">VOLVER AL PERFIL.</a></td>
+            <td></td>
+          </tr>
+
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+      
+      <div id="notices">
+        <div>Información : </div>
+        <div class="notice">El total de la compra viene con IVA incluido</div>
+      </div>
+      <a href="perfil.html" class="btn btn-primary text-uppercase py-2 px-4 my-3">Volver al perfil</a>
+    </main>
+    <footer>
+      Invoice was created on a computer and is valid without the signature and seal.
+    </footer>
+  </body>
+</html>
