@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -5,12 +6,12 @@
     <title>FACTURA</title>
     <link rel="stylesheet" href="{% static 'core/css/factura.css' %}" media="all" />
     <!-- Favicon -->
-    <link href="img/favicon.jpg.png" rel="icon">
+    <link href="{% static 'core/img/favicon.png' %}" rel="icon">
   </head>
   <body>
     <header class="clearfix">
       <div id="logo">
-        <img class="logo" src="img/favicon.jpg.png">
+        <img class="logo" src="{% static 'core/img/favicon.png' %}">
       </div>
       <div id="company">
         <h2 class="name">SnopDoggy</h2>
@@ -76,7 +77,7 @@
             <td class="qty"></td>
             <td class="desc"></td>
             <td class="unit"></td>
-            <td class="total"><a href="historial_ventas.html">VOLVER AL HISTORIAL DE VENTAS</a></td>
+            <td class="total"><a href="{% url 'historial_ventas' %}">VOLVER AL HISTORIAL DE VENTAS</a></td>
           </tr>
         </tbody>
         <tfoot>

@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Historial de compra</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="stylesheet" href="{% static 'core/css/factura.css' %}" media="all" />
-    <!-- Favicon -->
     
   </head>
   <body>
     <header class="clearfix">
       <div id="logo">
-        <img class="logo" src="img/favicon.jpg.png">
+        <img class="logo" src="{% static 'core/img/favicon.png' %}">
       </div>
       <div id="company">
         <h2 class="name">SnopDoggy</h2>
@@ -31,7 +32,7 @@
         </div>
         </div>
       </div>
-      <table border="0" cellspacing="0" cellpadding="0">
+      <table-border="0" cellspacing="0" cellpadding="0">
         <thead>
           <tr>
             <th class="no">NRO.Factura</th>
@@ -47,42 +48,42 @@
             <td class="desc"><h3>01/04/2022</h3></td>
             <td class="unit">$8.490</td>
             <td class="qty">En camino</td>
-            <td><a href="facture.html"> Ver Detalles</a></td>
+            <td><a href="{% url 'facture' %}"> Ver Detalles</a></td>
           </tr>
           <tr>
             <td class="no">#2430</td>
             <td class="desc"><h3>17/03/2022</h3></td>
             <td class="unit">$15.360</td>
             <td class="qty">Entregado</td>
-            <td><a href="facture.html"> Ver Detalles</a></td>
+            <td><a href="{% url 'facture' %}"> Ver Detalles</a></td>
           </tr>
           <tr>
             <td class="no">#3314</td>
             <td class="desc"><h3>31/02/2022</h3></td>
             <td class="unit">$7.200</td>
             <td class="qty">Entregado</td>
-            <td><a href="facture.html"> Ver Detalles</a></td>
+            <td><a href="{% url 'facture' %}"> Ver Detalles</a></td>
           </tr>
           <tr>
             <td class="no">#3390</td>
             <td class="desc"><h3>16/02/2022</h3></td>
             <td class="unit">$5.590</td>
             <td class="qty">Entregado</td>
-            <td><a href="facture.html"> Ver Detalles</a></td>
+            <td><a href="{% url 'facture' %}"> Ver Detalles</a></td>
           </tr>
           <tr>
             <td class="no">#3395</td>
             <td class="desc"><h3>03/02/2022</h3></td>
             <td class="unit">$2.990</td>
             <td class="qty">Cancelado</td>
-            <td><a href="facture.html"> Ver Detalles</a></td>
+            <td><a href="{% url 'facture' %}"> Ver Detalles</a></td>
           </tr>
           <tr>
             <td></td>
             <td><h3></h3></td>
             <td></td>
             <td></td>
-            <td class="total"><a href="perfil.html" class="btn btn-primary text-uppercase py-2 px-4 my-3">VOLVER AL PERFIL</a></td>
+            <td class="total"><a href="{% url 'perfil' %}" class="btn btn-primary text-uppercase py-2 px-4 my-3">VOLVER AL PERFIL</a></td>
           </tr>
         </tbody>
         <tfoot>

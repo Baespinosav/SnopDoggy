@@ -81,7 +81,7 @@
               <a href="{% url 'index' %}" class="nav-item nav-link ">Inicio</a>
               <a href="{% url 'about' %}" class="nav-item nav-link">Nosotros</a>
               <!-- <a href="service.html" class="nav-item nav-link">Servicio</a> -->
-              <a href="{% url 'product_client' %}" class="nav-item nav-link">Productos</a>
+              <a href="{% url 'product_anon' %}" class="nav-item nav-link">Productos</a>
               <a href="{% url 'perfil' %}" class="nav-item nav-link">Perfil</a>
               <div class="nav-item dropdown">
                   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sesión</a>
@@ -127,7 +127,7 @@
                 <td data-column="Esta Suscrito">No</td>
                 <td data-column="Monto Total">$8.490</td>
                 <td data-column="Estado Actual">En Camino</td>
-                <td data-column="Opciones" class="table-subray"><a href="facture.html">Ver Detalle</a></td>
+                <td data-column="Opciones" class="table-subray"><a href="{% url 'facture' %}">Ver Detalle</a></td>
                 <td data-column="Estado Actual">Despacho en camino</td>
             </tr>
             <tr class="active-row">
@@ -137,7 +137,7 @@
                 <td data-column="Esta Suscrito">Si</td>
                 <td data-column="Monto Total">$10.000</td>
                 <td data-column="Estado Actual">En Camino</td>
-                <td data-column="Opciones" class="table-subray"><a href="facture.html">Ver Detalle</a></td>
+                <td data-column="Opciones" class="table-subray"><a href="{% url 'facture' %}">Ver Detalle</a></td>
                 <td data-column="Estado Actual">Despacho en camino</td>
             </tr>
             <tr class="active-row">
@@ -147,7 +147,7 @@
                 <td data-column="Esta Suscrito">No</td>
                 <td data-column="Monto Total">$12.000</td>
                 <td data-column="Estado Actual">En Bodega</td>
-                <td data-column="Opciones" class="table-subray"><a href="facture.html">Ver Detalle</a></td>
+                <td data-column="Opciones" class="table-subray"><a href="{% url 'facture' %}">Ver Detalle</a></td>
                 <td data-column="Estado Actual">En bodega</td>
             </tr>
             <tr class="active-row">
@@ -157,7 +157,7 @@
                 <td data-column="Esta Suscrito">No</td>
                 <td data-column="Monto Total">$7.000</td>
                 <td data-column="Estado Actual">Entregado</td>
-                <td data-column="Opciones" class="table-subray"><a href="facture.html">Ver Detalle</a></td>
+                <td data-column="Opciones" class="table-subray"><a href="{% url 'facture' %}">Ver Detalle</a></td>
                 <td data-column="Estado Actual">Despacho entregado</td>
             </tr>
             <tr class="active-row">
