@@ -78,18 +78,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto py-0">
-              <a href="{% url 'index' %}" class="nav-item nav-link ">Inicio</a>
+              <a href="{% url 'index_admin' %}" class="nav-item nav-link ">Inicio</a>
               <a href="{% url 'about' %}" class="nav-item nav-link">Nosotros</a>
               <!-- <a href="service.html" class="nav-item nav-link">Servicio</a> -->
               <a href="{% url 'product_admin' %}" class="nav-item nav-link">Productos</a>
               <a href="{% url 'perfil' %}" class="nav-item nav-link">Perfil</a>
-              <div class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sesión</a>
-                  <div class="dropdown-menu m-0">
-                      <a href="{% url 'login' %}" class="dropdown-item">Iniciar sesión.</a>
-                      <a href="{% url 'registro' %}" class="dropdown-item">Registrate.</a>
-                      <a href="{% url 'login_admin' %}" class="dropdown-item">Admin.</a>
-                  </div>
+              <a href="{% url 'index' %}" class="nav-item nav-link">Cerrar Sesión</a>
               </div>
               </div>
               <a href="{% url 'contact' %}" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">Contacto <i class="bi bi-arrow-right"></i></a>
