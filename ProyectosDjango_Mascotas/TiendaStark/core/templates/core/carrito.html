@@ -1,9 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Historial de compra</title>
-    <link rel="stylesheet" href="css/factura copy.css" media="all" />
     <link rel="stylesheet" href="{% static 'core/css/factura copy.css' %}" media="all" />
     <!-- Favicon -->
     
@@ -11,7 +11,7 @@
   <body>
     <header class="clearfix">
       <div id="logo">
-        <img class="logo" src="img/favicon.jpg.png">
+        <img class="logo" src="{% static 'core/img/favicon.png' %}">
       </div>
       <div id="company">
         <h2 class="name">SnopDoggy</h2>
@@ -28,7 +28,7 @@
           <h2 class="name"> Alexis Sepulveda</h2>
           <div class="address">Mozart 5090, San Joaquin, RM</div>
           <div class="celular">+569 78146592</div>
-          <div class="email"><a href="correo">Alexis.Sepulveda1@gmail.com</a></div>
+          <div class="email"><a href="{% url 'perfil' %}">Alexis.Sepulveda1@gmail.com</a></div>
         </div>
         </div>
       </div>
@@ -88,7 +88,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="total"><a href=".html" class="btn btn-primary text-uppercase py-2 px-4 my-3">Pagar</a></td>
+            <td class="total"><a href="{% url 'perfil' %}" class="btn btn-primary text-uppercase py-2 px-4 my-3">Pagar</a></td>
             <td></td>
           </tr>
           <tr>
@@ -97,7 +97,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="total"><a href="perfil.html" class="btn btn-primary text-uppercase py-2 px-4 my-3">VOLVER AL PERFIL.</a></td>
+            <td class="total"><a href="{% url 'perfil' %}" class="btn btn-primary text-uppercase py-2 px-4 my-3">VOLVER AL PERFIL.</a></td>
             <td></td>
           </tr>
 
@@ -110,7 +110,7 @@
         <div>Información : </div>
         <div class="notice">El total de la compra viene con IVA incluido</div>
       </div>
-      <a href="perfil.html" class="btn btn-primary text-uppercase py-2 px-4 my-3">Volver al perfil</a>
+      <a href="{% url 'perfil' %}" class="btn btn-primary text-uppercase py-2 px-4 my-3">Volver al perfil</a>
     </main>
     <footer>
       Invoice was created on a computer and is valid without the signature and seal.
