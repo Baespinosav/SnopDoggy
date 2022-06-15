@@ -1,0 +1,20 @@
+body {
+    padding: 10px;
+}
+
+h1 {
+    margin-top: 30px !important;
+    margin-bottom: 40px !important;
+    text-align: center !important;
+    font-size: 50px !important;
+    color: red !important;
+}
+
+.nav_item_text {
+    font-weight: bold;
+}
+
+.img_menu {
+    height: 32px;
+    padding-right: 5px;
+}

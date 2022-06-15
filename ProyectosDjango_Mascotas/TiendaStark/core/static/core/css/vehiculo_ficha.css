@@ -1,0 +1,14 @@
+h1 {
+    text-align: center !important;
+    margin-bottom: 20px;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.borde_formulario {
+    border: 2px solid gray; 
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
