@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="{% static 'core/css/forms.css'%}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center !important;">
+            Mantenedor de Vehículos
+        </h1>
+        {% if form %}
+        <form method="POST" action="" enctype="multipart/form-data" id="formulario">
+            <div class="form-group">
+                {% csrf_token %} {{ form.as_p }}
+            </div>
+            <input type="submit" class="btn btn-primary btnwidth" id="id_guardar" value="Guardar">
+            <!-- <input type="reset" class="btn btn-primary btnwidth" id="id_nuevo" value="Nuevo"> -->
+            <a class="btn btn-success btnwidth" href="{% url 'vehiculo' 'ins' -1 %}">Nuevo</a>
+            {% if id != '-1' %}
+            <a class="btn btn-danger btnwidth" href="{% url 'vehiculo' 'del' id %}">Eliminar</a>
+            {% endif %}
+            <a class="btn btn-info btnwidth" href="{% url 'home' %}">Inicio</a>
+            {% if mesg %}
+            <div id="form_message" class="alert alert-danger" role="alert">{{ mesg }}</div>
+            {% endif %}
+        </form>
+        {% endif %}
+        {% if list %}
+        <table id="tabla_datos">
+            <thead>
+                <tr>
+                    <th>Patente</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Imagen</th>
+                    <th>Categoría</th>
+                    <th class="titulo_boton">Editar</th>
+                    <th class="titulo_boton">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ve in list %}
+                <tr>
+                    <td>{{ ve.patente }}</td>
+                    <td>{{ ve.marca }}</td>
+                    <td>{{ ve.modelo }}</td>
+                    <td><img src="/media/{{ ve.imagen }}" class="mini_auto" alt=""></td>
+                    <td>{{ ve.categoria }}</td>
+                    <td><a href="{% url 'vehiculo' 'upd' ve.patente %}" 
+                        class="btn btn-primary btn-sm boton_chico">Editar</a></td>
+                    <td><a href="{% url 'vehiculo' 'del' ve.patente %}" 
+                        class="btn btn-danger btn-sm boton_chico">Eliminar</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+        <br>
+        <a href="{% url 'poblar_bd' %}" class="btn btn-info btn-sm">Poblar BD</a>
+        <a href="http://127.0.0.1:8000/admin" class="btn btn-info btn-sm">Administración</a>
+        <a href="{% url 'home' %}" class="btn btn-info btn-sm">Home page</a>
+    </div>
+</body>
+</html>
